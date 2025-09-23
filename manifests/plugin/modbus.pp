@@ -31,8 +31,8 @@ class collectd::plugin::modbus (
   collectd::plugin { 'modbus':
     ensure  => $ensure,
     content => epp('collectd/plugin/modbus.conf', {
-        'data'  => $data,
-        'hosts' => $hosts,
+      'data'  => $data,
+      'hosts' => $hosts,
     }),
   }
 }
